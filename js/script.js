@@ -38,7 +38,6 @@ $(function () {
 
             $(this).animate({
                 width: $(this).attr("aria-valuenow") + "%"
-
             }, 1000);
 
         });
@@ -51,4 +50,13 @@ $(function () {
 
     /* */
 
+});
+
+/* ============================================
+|   |   |   |   Responsive Tabs
+=============================================== */
+$(function () {
+    $('#services-tabs').responsiveTabs({
+        animation: 'slide'
+    });
 });

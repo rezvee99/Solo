@@ -167,12 +167,27 @@ section {
 .btn-home:focus {
     color: #ffffff;
     background-color: #f4c613;
-    border: #f4c613;
+    border: 1px solid #f4c613;
+
+}
+
+.btn-yellow {
+    color: #ffffff;
+    border: 1px solid #f4c613;
+    background-color: #f4c613;
+
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #ffffff;
+    background-color: #212226;
+    border: 1px solid #212226;
 
 }
 
 /* ============================================
-|   |   |   |   Buttons   
+|   |   |   |   Arrow Buttons   
 =============================================== */
 #arrow-down {
     position: absolute;
@@ -238,14 +253,14 @@ section {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
-   
+
 }
 
 .horizontal-heading h2 {
     font-size: 42px;
     font-weight: 100;
     line-height: 45px;
-    margin:0 ;
+    margin: 0;
 }
 
 
@@ -554,4 +569,72 @@ ul.social-list li:nth-child(3) a:hover {
 
 .service p {
     line-height: normal;
+}
+
+/* ============================================
+|   |      Services 02(Responsive Tabs)
+=============================================== */
+#services-02 {
+    background: #f4f4f4;
+}
+
+#services-tabs ul {
+    margin-bottom: 40px;
+}
+
+#services-tabs ul li {
+    padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+    font-family: "Railway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Tab active state */
+#services-tabs ul li.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.service-tab .col-md-6 {
+    padding: 0;
+}
+
+.service-tab img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-tab .tab-bg {
+    background: #ffffff;
+    padding: 59px 30px;
+    min-height: 480px;
+}
+
+.service-tab h2 {
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.service-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-tab p {
+    line-height: 24px;
+    margin-bottom: 30;
+
 }
