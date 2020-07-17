@@ -653,6 +653,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 .portfolio-item {
     overflow: hidden;
+    position: relative;
 }
 
 /* Filter Buttons  CSS */
@@ -698,4 +699,49 @@ ul.social-list li:nth-child(3) a:hover {
 .portfolio-item:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.portfolio-itme-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, .9);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+/* Item Details Effect */
+.portfolio-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.portfolio-item-details h3 {
+    color: #f4c613;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto;
+}
+
+.portfolio-item-details p {
+    font-size: 17px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
