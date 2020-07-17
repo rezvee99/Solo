@@ -160,7 +160,7 @@ section {
 
 .btn-home {
     color: #ffffff;
-    border: 1px solid #ffffff;  
+    border: 1px solid #ffffff;
 }
 
 .btn-home:hover,
@@ -651,6 +651,10 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 0;
 }
 
+.portfolio-item {
+    overflow: hidden;
+}
+
 /* Filter Buttons  CSS */
 
 #isotope-filters {
@@ -659,7 +663,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 #isotope-filters button {
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 12px;
     font-weight: 700;
     background: transparent;
@@ -675,8 +679,23 @@ ul.social-list li:nth-child(3) a:hover {
     transition: border-color .4s ease-in-out;
 }
 
-#isotope-filters button.active span{
+#isotope-filters button.active span {
     color: #f4c613;
-    border-bottom: 3px solid #f4c613; 
+    border-bottom: 3px solid #f4c613;
 }
 
+/* Zoom Effect */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, webkit-transform .5s ease;
+
+}
+
+.portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
