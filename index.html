@@ -729,19 +729,36 @@
 
                     </div>
 
+                    <div class="col-md-12">
+
+
+                        <!-- Portfolio Item Filters -->
+                        <div id="isotope-filters">
+
+                            <button class="btn active" data-filter="*"><span>All</span></button>
+                            <button class="btn" data-filter=".logo"><span>Logo</span></button>
+                            <button class="btn" data-filter=".web"><span>Web</span></button>
+                            <button class="btn" data-filter=".mobile"><span>Mobile</span></button>
+                            <button class="btn" data-filter=".desktop"><span>Desktop</span></button>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
             <!-- Portfolio Items Wrapper -->
-            <Section id="portfolio">
+            <Section id="portfolio-wrapper">
+
                 <div class="container-fluid">
 
                     <div class="row no-gutters">
 
-                        <div id="*-container">
+                        <div id="isotope-container">
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 desktop">
 
                                 <!-- Portfoliio Item 01 -->
                                 <div class="portfolio-item">
@@ -768,7 +785,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 web">
 
                                 <!-- Portfoliio Item 02 -->
                                 <div class="portfolio-item">
@@ -794,7 +811,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 web mobile logo">
 
                                 <!-- Portfoliio Item 03 -->
                                 <div class="portfolio-item">
@@ -820,7 +837,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 web logo">
 
                                 <!-- Portfoliio Item 04 -->
                                 <div class="portfolio-item">
@@ -846,7 +863,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 web">
 
                                 <!-- Portfoliio Item 05 -->
                                 <div class="portfolio-item">
@@ -872,7 +889,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 logo desktop">
 
                                 <!-- Portfoliio Item 06 -->
                                 <div class="portfolio-item">
@@ -898,7 +915,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 web mobile">
 
                                 <!-- Portfoliio Item 07 -->
                                 <div class="portfolio-item">
@@ -924,13 +941,13 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 web mobile">
 
                                 <!-- Portfoliio Item 08 -->
                                 <div class="portfolio-item">
-                                        
+
                                     <a href="img/portfolio/008.jpg" title="Add Description">
-                                        <img src="img/portfolio/008.jpg" class="img-responsive" alt="portfolio 08"> 
+                                        <img src="img/portfolio/008.jpg" class="img-responsive" alt="portfolio 08">
                                         <div class="portfolio-itme-overlay">
                                             <div class="portfolio-item-details text-center">
 
@@ -945,7 +962,7 @@
 
                                             </div>
 
-                                        </div> 
+                                        </div>
 
                                     </a>
                                 </div>
@@ -1003,6 +1020,9 @@
 
     <!-- Responsive Tabs JS -->
     <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
+    <!-- Isotope  -->
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
 
     <!-- Java Scrip link  -->
     <script src="js/script.js"></script>
