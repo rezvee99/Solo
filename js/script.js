@@ -66,18 +66,18 @@ $(function () {
 |   |   |   |   Portfolio
 =============================================== */
 $(window).on('load', function () {
-    
+
     //initialize Isotope
     $("#isotope-container").isotope({
 
     });
 
     // filter items on button click 
-    $('#isotope-filters').on( 'click', 'button', function() {
-        
+    $('#isotope-filters').on('click', 'button', function () {
+
         //get filter value
         var filterValue = $(this).attr('data-filter');
-        
+
         //filter portfolio 
         $("#isotope-container").isotope({
             filter: filterValue
@@ -88,6 +88,22 @@ $(window).on('load', function () {
         $(this).addClass('active');
 
 
-      });
+    });
+
+});
+
+
+/* ============================================
+|   |   |   |   Magnific PopUp
+=============================================== */
+
+$(function () {
+    $('#portfolio-wrapper').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
+          }
+    });
 
 });
