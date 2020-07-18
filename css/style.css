@@ -671,6 +671,7 @@ ul.social-list li:nth-child(3) a:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding-right: 30px;
+    outline: 0;
 }
 
 #isotope-filters button span {
@@ -711,6 +712,9 @@ ul.social-list li:nth-child(3) a:hover {
     background: rgba(14, 14, 17, .9);
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 /* Item Details Effect */
@@ -719,6 +723,8 @@ ul.social-list li:nth-child(3) a:hover {
     position: absolute;
     top: 50%;
     left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .portfolio-item-details h3 {
@@ -727,6 +733,10 @@ ul.social-list li:nth-child(3) a:hover {
     font-size: 30px;
     margin: 0;
     padding: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .portfolio-item-details span {
@@ -744,4 +754,23 @@ ul.social-list li:nth-child(3) a:hover {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Show overlay on mouse over */
+.portfolio-item:hover .portfolio-item-details h3 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-details p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-itme-overlay {
+    opacity: 1;
 }
