@@ -643,6 +643,10 @@ ul.social-list li:nth-child(3) a:hover {
 |   |     Portfolio
 =============================================== */
 
+#portfolio {
+    padding-bottom: 160px;
+}
+
 #portfolio .vertical-heading {
     margin-bottom: 50px;
 }
@@ -773,4 +777,60 @@ ul.social-list li:nth-child(3) a:hover {
 
 .portfolio-item:hover .portfolio-itme-overlay {
     opacity: 1;
+}
+
+/* ============================================
+|   |     Testimonials
+=============================================== */
+#testimonials {
+    background: #f4f4f4;
+    padding-bottom: 45px;
+    overflow: visible;
+}
+
+#testimonials .vertical-heading {
+    padding: 80px 0;
+    padding-bottom: 50px;
+}
+
+#testimonial-slider {
+    background: #f4c613;
+    top: -120px;
+
+}
+
+.testimonial .row {
+    margin-bottom: 25px;
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+    color: #ffffff;
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.author .author-name-des {
+    width: 106px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.author .author-name-des p {
+    margin: 0;
 }
