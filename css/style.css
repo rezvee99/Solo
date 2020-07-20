@@ -233,6 +233,9 @@ section {
     padding: 100px 0;
 }
 
+.content-box-sm {
+    padding: 90px 0;
+}
 /* ============================================
 |   |   |   |  Vertical / Horizontal Heading  
 =============================================== */
@@ -1029,4 +1032,25 @@ ul.social-list li:nth-child(3) a:hover {
     color: #212226;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
+}
+
+/* ============================================
+|   |     |     clients
+=============================================== */
+#clients .horizontal-heading {
+    margin-bottom: 30px;
+}
+
+#clients-list {
+    padding: 45px 0 0 0;
+}
+
+.client {
+    padding: 0 10px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.client img {
+    display: inline-block !important ;
 }
