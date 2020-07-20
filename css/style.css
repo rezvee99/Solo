@@ -236,6 +236,7 @@ section {
 .content-box-sm {
     padding: 90px 0;
 }
+
 /* ============================================
 |   |   |   |  Vertical / Horizontal Heading  
 =============================================== */
@@ -1025,7 +1026,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .stats-item:hover {
-    background: #f4c613;   
+    background: #f4c613;
 }
 
 .stats-item:hover i {
@@ -1052,5 +1053,69 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .client img {
-    display: inline-block !important ;
+    display: inline-block !important;
+}
+
+/* ============================================
+|   |     |     Blog
+=============================================== */
+#blog {
+    background: #f4f4f4;
+}
+
+#blog-left p {
+    margin: 25px 0;
+}
+
+#blog-btn a {
+    margin: 0;
+}
+
+.blog-post {
+    background: #ffffff;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.blog-post h4 {
+    line-height: 40px;
+    margin: 0;
+}
+
+.blog-post>p {
+    line-height: 24px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    color: #f4c613;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.blog-post a:hover {
+    color: #212226;
+}
+
+.blog-post .post-meta {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.blog-post .post-meta p {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
 }
