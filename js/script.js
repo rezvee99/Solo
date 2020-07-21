@@ -154,3 +154,23 @@ $(function () {
     });
 
 });
+
+/* ============================================
+|   |   |   |   Google MAps
+=============================================== */
+$(window).on('load', function () {
+
+    //Map Variables
+    var addressString = '23.601244, 90.623531';
+    var mylatlng = {
+        lat: 3.601244,
+        lng: 90.623531
+    };
+
+    //1. Render Google Map
+    var map= new google.maps.Map(document.getElementById('map'),{
+        zoom: 11,
+        center: mylatlng
+    });
+
+});
