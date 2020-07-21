@@ -168,11 +168,14 @@ $(window).on('load', function () {
     };
 
     //1. Render Google Map
-    var map= new google.maps.Map(document.getElementById('map'),{
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
         center: mylatlng
     });
 
-    var marker = new google.maps.Marker({position: mylatlng, map: map});
+    var marker = new google.maps.Marker({
+        position: mylatlng,
+        map: map
+    });
 
 });
