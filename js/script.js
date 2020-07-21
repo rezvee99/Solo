@@ -173,4 +173,6 @@ $(window).on('load', function () {
         center: mylatlng
     });
 
+    var marker = new google.maps.Marker({position: mylatlng, map: map});
+
 });
