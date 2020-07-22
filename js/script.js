@@ -179,3 +179,32 @@ $(window).on('load', function () {
     });
 
 });
+
+/* ============================================
+|   |   |   |   Navigation
+=============================================== */
+
+$(document).ready(function () {
+    $(window).scroll(function () { 
+        
+        showHideNav();
+    });
+
+    function showHideNav(){
+        if ($(window).scrollTop()>50) {
+
+            //Show white nav
+            $("nav").addClass("white-nav-top");
+
+            //show dark logo
+            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png")
+
+        } else {
+            //Hide white nav
+            $("nav").removeClass("white-nav-top");
+            //hide dark logo & show white one
+            $(".navbar-brand img").attr("src", "img/logo/logo.png")
+        }
+
+    }
+});
