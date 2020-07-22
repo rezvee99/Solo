@@ -201,6 +201,16 @@ section {
 
 }
 
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
+}
+
 /* ============================================
 |   |   |   |   Arrow Buttons   
 =============================================== */
@@ -1227,7 +1237,7 @@ footer p span {
 }
 
 ul.navbar-nav>li>a {
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 13px;
     font-weight: 400;
@@ -1258,4 +1268,11 @@ ul.navbar-nav>li>a:focus {
 .white-nav-top ul.navbar-nav>li>a:hover,
 .white-nav-top ul.navbar-nav>li>a:focus {
     color: #f4c613;
+}
+
+/* Scrollspy active state */
+
+.white-nav-top ul.navbar-nav>li.active>a {
+    color: #f4c613;
+    font-weight: 500;
 }

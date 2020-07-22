@@ -185,25 +185,26 @@ $(window).on('load', function () {
 =============================================== */
 
 $(document).ready(function () {
-    $(window).scroll(function () { 
-        
+    $(window).scroll(function () {
+
         showHideNav();
     });
 
-    function showHideNav(){
-        if ($(window).scrollTop()>50) {
-
+    function showHideNav() {
+        if ($(window).scrollTop() > 50) {
             //Show white nav
             $("nav").addClass("white-nav-top");
-
             //show dark logo
-            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png")
-
+            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            //show to back to top
+            $("#back-to-top").fadeIn();
         } else {
             //Hide white nav
             $("nav").removeClass("white-nav-top");
             //hide dark logo & show white one
-            $(".navbar-brand img").attr("src", "img/logo/logo.png")
+            $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            //hide to back to top
+            $("#back-to-top").fadeOut();
         }
 
     }
