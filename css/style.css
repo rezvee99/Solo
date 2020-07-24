@@ -647,7 +647,7 @@ ul.social-list li:nth-child(3) a:hover {
 .service-tab .tab-bg {
     background: #ffffff;
     padding: 59px 30px;
-    min-height: 480px;
+    min-height: 481px;
 }
 
 .service-tab h2 {
@@ -1146,8 +1146,9 @@ ul.office-details {
 ul.office-details li {
     font-family: "Open Sans", sans-serif;
     margin-top: 12px;
-    -webkit-display: flex;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 ul.office-details li i {
@@ -1229,7 +1230,7 @@ footer p span {
 }
 
 .site-nav-wrapper {
-    padding: 0 85px 0 85px;
+    padding: 0 85px;
 }
 
 .navbar-brand {

@@ -1,0 +1,108 @@
+/* ============================================
+|   |    |   Bootstrap 3 Media Queries
+=============================================== */
+
+/* Large Devices  */
+@media(min-width: 1200px) and (max-width: 1299px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+}
+
+/* medium Devices */
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    /* Services 02 */
+    #services-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 400px;
+    }
+
+    .service-tab p {
+        line-height: 20px;
+    }
+}
+
+
+/* Small Devices */
+@media(min-width: 768px) and (max-width: 991px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    /* Home */
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    #home-text p {
+        font-size: 13px;
+    }
+    /* Generic */
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+    }
+     /* Generic */
+     .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    /* Tech Statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Services 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Railway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    /* Tab active state */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+    /* Pricing */
+    .pricing-table .price h2 {
+        margin: 0 0 0 6px;
+        size: 35px;
+    }
+
+    /* blog */
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+
+}
+
+
+/* extra Small Devices */
+@media (max-width: 767px) {}
