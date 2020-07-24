@@ -96,9 +96,22 @@
         size: 35px;
     }
 
+    /* Stats */
+    .stats-item p {
+        line-height: 18px;
+    }
+
     /* blog */
     .blog-post .post-meta p {
         line-height: 14px;
+    }
+
+    /* Contact */
+    ul.office-details li{
+        margin-right: 15px;
+    }
+    ul.office-details li i {
+        width: 25px;
     }
 
 }
