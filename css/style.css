@@ -258,6 +258,7 @@ section {
     text-transform: uppercase;
     word-spacing: 9px;
     display: inline-block;
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     position: relative;
     top: 60px;
@@ -819,7 +820,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 #testimonials .vertical-heading {
     padding: 80px 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 #testimonial-slider {
