@@ -183,40 +183,6 @@ $(function () {
 });
 
 /* ============================================
-|   |   |   |   Google MAps
-=============================================== */
-$(window).on('load', function () {
-
-    //Map Variables
-    var addressString = '23.601244, 90.623531';
-    var mylatlng = {
-        lat: 3.601244,
-        lng: 90.623531
-    };
-
-    //1. Render Google Map
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: mylatlng
-    });
-
-    var marker = new google.maps.Marker({
-        position: mylatlng,
-        map: map
-    });
-
-    // resize function
-    google.maps.addDomListener(window, 'resize',function(){
-        var center = map.getCenter();
-        google.maps.event.trigger(map,'resize');
-        map.setCenter(center);
-    });
-
-
-
-});
-
-/* ============================================
 |   |   |   |   Navigation
 =============================================== */
 
@@ -261,4 +227,56 @@ $(document).ready(function () {
     $("#mobile-nav-close-btn,#mobile-nav a").click(function () { 
         $("#mobile-nav").css("height","0%");      
     });
+});
+
+
+/* ============================================
+|   |   |   |   Animation
+=============================================== */
+//animation on scroll
+$(document).ready(function () {
+    new WOW().init();
+});
+
+$(window).on('load',function() {
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-heading-2").addClass("animated fadeInLeft");
+    $("#home-text").addClass("animated zoomIn");
+    $("#home-btn").addClass("animated zoomIn");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
+
+});
+
+/* ============================================
+|   |   |   |   Google MAps
+=============================================== */
+$(window).on('load', function () {
+
+    //Map Variables
+    var addressString = '23.601244, 90.623531';
+    var mylatlng = {
+        lat: 3.601244,
+        lng: 90.623531
+    };
+
+    //1. Render Google Map
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: mylatlng
+    });
+
+    var marker = new google.maps.Marker({
+        position: mylatlng,
+        map: map
+    });
+
+    // resize function
+    google.maps.addDomListener(window, 'resize',function(){
+        var center = map.getCenter();
+        google.maps.event.trigger(map,'resize');
+        map.setCenter(center);
+    });
+
+
+
 });
