@@ -134,7 +134,7 @@
 
     #home-text p {
         font-size: 13px;
-        line-height: 8px;
+        line-height: 18px;
         margin: 8px 2px 30px 2px;
     }
 
@@ -217,9 +217,10 @@
 
     /* Horizontal Heading */
     .horizontal-heading {
-        margin-bottom: 40px;   
+        margin-bottom: 40px;
     }
-    .horizontal-heading  h2 {
+
+    .horizontal-heading h2 {
         font-size: 30px;
     }
 
@@ -227,9 +228,11 @@
         margin: 35px 0;
     }
 
-    .service,.service .icon {
+    .service,
+    .service .icon {
         text-align: center;
     }
+
     .service h4 {
         font-size: 18px;
     }
@@ -268,6 +271,7 @@
     #services-tabs h2 {
         font-size: 40px;
     }
+
     #services-tabs h3 {
         font-size: 28px;
     }
@@ -281,11 +285,12 @@
         padding: 15px;
     }
 
-     /* Testimonial */
-     #testimonials {
-         padding-top: 45px;
-     }
-     #testimonial-slider {
+    /* Testimonial */
+    #testimonials {
+        padding-top: 45px;
+    }
+
+    #testimonial-slider {
         top: 0;
     }
 
@@ -306,10 +311,120 @@
     }
 
     .author img {
-        width: 80px !important; 
+        width: 80px !important;
     }
 
+    /* Pricing */
+    .pricing-table {
+        margin-bottom: 30px;
+    }
+
+    .pricing-table .price h2 {
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+
+    /* Stats */
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+
+    .stats-item i {
+        font-size: 30px;
+    }
+
+    .stats-item h3 {
+        font-size: 24px;
+    }
+
+    /* blog */
+    #blog-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-post {
+        margin-bottom: 25px;
+    }
+
+    /* contact */
+    #contact-left {
+        text-align: center;
+    }
+
+    .office {
+        margin-bottom: 40px;
+    }
+
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+
+}
 
 
+/* Extra small devices */
+@media (max-width: 480px) {
 
+    /* Home */
+    #home-heading h1 {
+        font-size: 18px;
+    }
+
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 22px;
+    }
+
+    /* portfolio */
+    #isotope-filters {
+        text-align: center;
+    }
+
+    #isotope-filters button {
+        font-size: 10px;
+        padding: 14px;
+    }
+
+    /* testimonials */
+    .testimonial h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .testimonial .stars {
+        font-size: 13px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+
+    /* testimonials */
+    .testimonial h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .testimonial .stars {
+        font-size: 10px;
+    }
 }
