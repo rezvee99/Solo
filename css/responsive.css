@@ -127,6 +127,23 @@
 /* extra Small Devices */
 @media (max-width: 767px) {
 
+    /* Navigation */
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 0;
+    }
+
+    /* Show mobile nav open btn */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+
+
     /* Home */
     #home-heading h1 {
         font-size: 22px;

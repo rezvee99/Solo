@@ -205,6 +205,15 @@ $(window).on('load', function () {
         map: map
     });
 
+    // resize function
+    google.maps.addDomListener(window, 'resize',function(){
+        var center = map.getCenter();
+        google.maps.event.trigger(map,'resize');
+        map.setCenter(center);
+    });
+
+
+
 });
 
 /* ============================================
@@ -235,4 +244,21 @@ $(document).ready(function () {
         }
 
     }
+});
+
+/* ============================================
+|   |   |   |   Mobile Menu
+=============================================== */
+
+$(document).ready(function () {
+
+    // show mobile nav
+    $("#mobile-nav-open-btn").click(function () { 
+        $("#mobile-nav").css("height","100%");      
+    });
+
+    // hide mobile nav 
+    $("#mobile-nav-close-btn,#mobile-nav a").click(function () { 
+        $("#mobile-nav").css("height","0%");      
+    });
 });
