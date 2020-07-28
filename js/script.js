@@ -1,7 +1,7 @@
 /* ============================================
 |   |   |   |   Preloader  
 =============================================== */
-$(window).on('load', function () { //make sure that whole site is loaded
+$(window).on('load', function () { // makes sure that whole site is loaded
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
 });
@@ -50,7 +50,7 @@ $(function () {
 
             $(this).animate({
                 width: $(this).attr("aria-valuenow") + "%"
-            }, 1000);
+            }, 2000);
 
         });
 
@@ -247,36 +247,49 @@ $(window).on('load',function() {
 
 });
 
-/* ============================================
-|   |   |   |   Google MAps
-=============================================== */
+/* =========================================
+              Google Map
+============================================ */
 $(window).on('load', function () {
 
-    //Map Variables
-    var addressString = '23.601244, 90.623531';
-    var mylatlng = {
-        lat: 3.601244,
-        lng: 90.623531
+    // Map Variables
+    var addressString = '230 Broadway, NY, New York 10007, USA';
+    var myLatlng = {
+        lat: 40.712685,
+        lng: -74.005920
     };
 
-    //1. Render Google Map
+    // 1. Render Map
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
-        center: mylatlng
+        center: myLatlng
     });
 
+    // 2. Add Marker
     var marker = new google.maps.Marker({
-        position: mylatlng,
-        map: map
+        position: myLatlng,
+        map: map,
+        title: "Click To See Address"
     });
 
-    // resize function
-    google.maps.addDomListener(window, 'resize',function(){
+    // 3. Add Info Window
+    var infowindow = new google.maps.InfoWindow({
+        content: addressString
+    });
+
+    // Show info window when user clicks marker
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+    // 4. Resize Function
+    google.maps.event.addDomListener(window, 'resize', function () {
+
         var center = map.getCenter();
-        google.maps.event.trigger(map,'resize');
+        google.maps.event.trigger(map, 'resize');
         map.setCenter(center);
+
     });
-
-
 
 });
+
